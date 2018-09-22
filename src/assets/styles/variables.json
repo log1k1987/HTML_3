@@ -1,0 +1,14 @@
+{
+  "white": "#efeee9",
+  "beige": "#eeebdf",
+  "green": "#00bfa5",
+  "green-hover": "#009688",
+  "text-color": "#455a64",
+  "grey": "#373e42",
+  "light-grey": "#dfdcd5",
+  "test": "#000",
+  "desktop": "1800px",
+  "laptop": "1200px",
+  "tablets": "768px",
+  "phones": "480px"
+}
