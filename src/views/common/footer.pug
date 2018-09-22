@@ -1,2 +1,21 @@
 footer.footer
-  h2 Copyright &copy;
+  .footer__row
+    .footer__col
+      -
+        var menues = [
+            ['Мои работы', 'http://vk.com'],
+            ['Обо мне', 'http://vk.com'],
+            ['Блог', 'http://vk.com'],
+            ['Авторизация', 'index.html']
+        ]
+      +menues(menues, 'footer__menu')
+
+    .footer__col.footer__col_justify_end
+      +socials(socials, 'footer__socials')
+
+  .footer__row
+    .footer__col
+      .footer__text
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam distinctio, explicabo quaerat vero ipsum corrupti facilis sit consequuntur, doloribus similique iste error, cupiditate ullam dignissimos minima. Ratione quod voluptates deserunt.
+    .footer__col.footer__col_justify_end
+      p Lorem ipsum dolor sit amet consectetur adipisicing elit.

@@ -11,46 +11,54 @@
     <div class="wrapper">
       <div class="maincontent">
         <section class="hero">
-          <ul class="socials xzzzz">
-            <li class="socials__item"><a class="socials__link" href="http://vk.com" target="_blank">
-                <svg class="socials__link-icon">
-                  <use xlink:href="assets/images/icons/sprite.svg#vk"></use>
-                </svg></a></li>
-            <li class="socials__item"><a class="socials__link" href="http://gh.com" target="_blank">
-                <svg class="socials__link-icon">
-                  <use xlink:href="assets/images/icons/sprite.svg#github"></use>
-                </svg></a></li>
-            <li class="socials__item"><a class="socials__link" href="http://in.com" target="_blank">
-                <svg class="socials__link-icon">
-                  <use xlink:href="assets/images/icons/sprite.svg#in"></use>
-                </svg></a></li>
-          </ul>
-          <div class="hero__menu"><a class="hamburger" href=""></a></div>
+          <div class="hero__socials">
+            <ul class="socials socials_fill_white">
+              <li class="socials__item"><a class="socials__link" href="http://vk.com" target="_blank">
+                  <svg class="socials__link-icon">
+                    <use xlink:href="assets/images/icons/sprite.svg#vk"></use>
+                  </svg></a></li>
+              <li class="socials__item"><a class="socials__link" href="http://gh.com" target="_blank">
+                  <svg class="socials__link-icon">
+                    <use xlink:href="assets/images/icons/sprite.svg#github"></use>
+                  </svg></a></li>
+              <li class="socials__item"><a class="socials__link" href="http://in.com" target="_blank">
+                  <svg class="socials__link-icon">
+                    <use xlink:href="assets/images/icons/sprite.svg#in"></use>
+                  </svg></a></li>
+            </ul>
+          </div>
+          <div class="hero__menu"><a class="hamburger-menu-btn" href="#">
+              <div class="hamburger-menu-lines"></div></a></div>
           <div class="hero__title">
             <div class="section-title"><img class="section-title__pic" src="" alt=""></div>
-            <div class="user hero__user">
-              <div class="user__pic"><img class="user__pic-img"></div>
+            <div class="user">
+              <div class="user__pic"><img class="user__pic-img" src="assets/images/content/user.jpg"></div>
               <div class="user__description">
-                <div class="user__name">Владимир Астахов</div>
-                <div class="user__info">Личный сайт разработчика</div>
+                <div class="user__name">Ковылин Николай</div>
+                <div class="user__info">Личный сайт веб разработчика</div>
               </div>
             </div>
-          </div><a class="down-btn hero__down-btns" href=""></a>
+          </div><a class="down-btn hero__down-btns" href="">
+            <svg class="arrow-down">
+              <use xlink:href="assets/images/icons/sprite.svg#arrow_down"></use>
+            </svg></a>
         </section>
         <section class="about">
           <div class="about__left">
             <div class="about__triangle">
-              <svg class="triangle triangle_fill_white"></svg>
+              <svg class="triangle triangle_fill_izibeige" viewbox="0 0 1000 160" preserveaspectratio="none">
+                <polygon class="left" points="0,0   0,160   1000.8,160   1000.8,150"></polygon>
+              </svg>
             </div>
             <div class="about__left-title">
-              <div class="block-title">Обо мне</div>
+              <h2 class="block-title lr">Обо мне</h2>
             </div>
             <div class="about__left-content">
               <div class="user-description">
-                <div class="user-description__image"><img class="user-description__avatar"></div>
+                <div class="user-description__image"><img class="user-description__avatar" src="assets/images/content/user.jpg"></div>
                 <div class="user-description__data">
                   <div class="user-description__title">
-                    <div class="block-subtitle">Кто я </div>
+                    <h2 class="block-subtitle lr">Кто я </h2>
                   </div>
                   <div class="user-description__text text-content">
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In tempore non modi ex quia deserunt, beatae sint explicabo consequuntur maxime cupiditate, aliquam repudiandae tenetur natus labore voluptatum fugiat totam veritatis.</p>
@@ -62,10 +70,12 @@
           </div>
           <div class="about__right">
             <div class="about__triangle">
-              <svg class="triangle triangle_fill_beige"></svg>
+              <svg class="triangle triangle_fill_beige" viewbox="0 0 1000 160" preserveaspectratio="none">
+                <polygon class="right" points="1000,0   1000,160   0,160   0,150"></polygon>
+              </svg>
             </div>
             <div class="about__right-title">
-              <div class="block-subtitle">Чем я могу быть вам полезен</div>
+              <div class="block-subtitle lr">Чем я могу быть вам полезен</div>
             </div>
             <div class="about__right-description text-content">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste velit mollitia nemo reprehenderit ipsam corrupti deleniti, blanditiis sit magni fuga eveniet hic sint illo? Quae harum voluptatem optio ipsum blanditiis. </p>
@@ -77,29 +87,29 @@
                   <ul class="skills-row__list">
                     <li class="skills-row__item">
                       <figure class="skill" data-percents="70">
-                        <svg class="skill__figure" viewBox="0 0 100 100" preserveAspectRatio="none">
-                          <circle class="skill__circle skill__circle_under" cx="50" cy="50" r="40"></circle>
-                          <circle class="skill__circle skill__circle_above" cx="50" cy="50" r="40"></circle>
+                        <svg class="skill__figure" viewBox="0 0 110 110" preserveAspectRatio="none">
+                          <circle class="skill__circle skill__circle_under" cx="50%" cy="50%" r="45"></circle>
+                          <circle class="skill__circle skill__circle_above" cx="50%" cy="50%" r="45" transform="rotate(-90 55 55)"></circle>
                         </svg>
-                        <div class="skill__title">Html5</div>
+                        <div class="skill__title">HTML5</div>
                       </figure>
                     </li>
                     <li class="skills-row__item">
                       <figure class="skill" data-percents="70">
-                        <svg class="skill__figure" viewBox="0 0 100 100" preserveAspectRatio="none">
-                          <circle class="skill__circle skill__circle_under" cx="50" cy="50" r="40"></circle>
-                          <circle class="skill__circle skill__circle_above" cx="50" cy="50" r="40"></circle>
+                        <svg class="skill__figure" viewBox="0 0 110 110" preserveAspectRatio="none">
+                          <circle class="skill__circle skill__circle_under" cx="50%" cy="50%" r="45"></circle>
+                          <circle class="skill__circle skill__circle_above" cx="50%" cy="50%" r="45" transform="rotate(-90 55 55)"></circle>
                         </svg>
-                        <div class="skill__title">css3</div>
+                        <div class="skill__title">CSS3</div>
                       </figure>
                     </li>
                     <li class="skills-row__item">
                       <figure class="skill" data-percents="70">
-                        <svg class="skill__figure" viewBox="0 0 100 100" preserveAspectRatio="none">
-                          <circle class="skill__circle skill__circle_under" cx="50" cy="50" r="40"></circle>
-                          <circle class="skill__circle skill__circle_above" cx="50" cy="50" r="40"></circle>
+                        <svg class="skill__figure" viewBox="0 0 110 110" preserveAspectRatio="none">
+                          <circle class="skill__circle skill__circle_under" cx="50%" cy="50%" r="45"></circle>
+                          <circle class="skill__circle skill__circle_above" cx="50%" cy="50%" r="45" transform="rotate(-90 55 55)"></circle>
                         </svg>
-                        <div class="skill__title">javascript</div>
+                        <div class="skill__title">javaScript $ jQuery</div>
                       </figure>
                     </li>
                   </ul>
@@ -109,29 +119,38 @@
                   <ul class="skills-row__list">
                     <li class="skills-row__item">
                       <figure class="skill" data-percents="70">
-                        <svg class="skill__figure" viewBox="0 0 100 100" preserveAspectRatio="none">
-                          <circle class="skill__circle skill__circle_under" cx="50" cy="50" r="40"></circle>
-                          <circle class="skill__circle skill__circle_above" cx="50" cy="50" r="40"></circle>
+                        <svg class="skill__figure" viewBox="0 0 110 110" preserveAspectRatio="none">
+                          <circle class="skill__circle skill__circle_under" cx="50%" cy="50%" r="45"></circle>
+                          <circle class="skill__circle skill__circle_above" cx="50%" cy="50%" r="45" transform="rotate(-90 55 55)"></circle>
                         </svg>
-                        <div class="skill__title">Html5</div>
+                        <div class="skill__title">PHP</div>
                       </figure>
                     </li>
                     <li class="skills-row__item">
                       <figure class="skill" data-percents="70">
-                        <svg class="skill__figure" viewBox="0 0 100 100" preserveAspectRatio="none">
-                          <circle class="skill__circle skill__circle_under" cx="50" cy="50" r="40"></circle>
-                          <circle class="skill__circle skill__circle_above" cx="50" cy="50" r="40"></circle>
+                        <svg class="skill__figure" viewBox="0 0 110 110" preserveAspectRatio="none">
+                          <circle class="skill__circle skill__circle_under" cx="50%" cy="50%" r="45"></circle>
+                          <circle class="skill__circle skill__circle_above" cx="50%" cy="50%" r="45" transform="rotate(-90 55 55)"></circle>
                         </svg>
-                        <div class="skill__title">css3</div>
+                        <div class="skill__title">mySQL</div>
                       </figure>
                     </li>
                     <li class="skills-row__item">
                       <figure class="skill" data-percents="70">
-                        <svg class="skill__figure" viewBox="0 0 100 100" preserveAspectRatio="none">
-                          <circle class="skill__circle skill__circle_under" cx="50" cy="50" r="40"></circle>
-                          <circle class="skill__circle skill__circle_above" cx="50" cy="50" r="40"></circle>
+                        <svg class="skill__figure" viewBox="0 0 110 110" preserveAspectRatio="none">
+                          <circle class="skill__circle skill__circle_under" cx="50%" cy="50%" r="45"></circle>
+                          <circle class="skill__circle skill__circle_above" cx="50%" cy="50%" r="45" transform="rotate(-90 55 55)"></circle>
                         </svg>
-                        <div class="skill__title">javascript</div>
+                        <div class="skill__title">Node.js $ npm</div>
+                      </figure>
+                    </li>
+                    <li class="skills-row__item">
+                      <figure class="skill" data-percents="70">
+                        <svg class="skill__figure" viewBox="0 0 110 110" preserveAspectRatio="none">
+                          <circle class="skill__circle skill__circle_under" cx="50%" cy="50%" r="45"></circle>
+                          <circle class="skill__circle skill__circle_above" cx="50%" cy="50%" r="45" transform="rotate(-90 55 55)"></circle>
+                        </svg>
+                        <div class="skill__title">Mongo.db</div>
                       </figure>
                     </li>
                   </ul>
@@ -141,29 +160,29 @@
                   <ul class="skills-row__list">
                     <li class="skills-row__item">
                       <figure class="skill" data-percents="70">
-                        <svg class="skill__figure" viewBox="0 0 100 100" preserveAspectRatio="none">
-                          <circle class="skill__circle skill__circle_under" cx="50" cy="50" r="40"></circle>
-                          <circle class="skill__circle skill__circle_above" cx="50" cy="50" r="40"></circle>
+                        <svg class="skill__figure" viewBox="0 0 110 110" preserveAspectRatio="none">
+                          <circle class="skill__circle skill__circle_under" cx="50%" cy="50%" r="45"></circle>
+                          <circle class="skill__circle skill__circle_above" cx="50%" cy="50%" r="45" transform="rotate(-90 55 55)"></circle>
                         </svg>
-                        <div class="skill__title">Html5</div>
+                        <div class="skill__title">Git</div>
                       </figure>
                     </li>
                     <li class="skills-row__item">
                       <figure class="skill" data-percents="70">
-                        <svg class="skill__figure" viewBox="0 0 100 100" preserveAspectRatio="none">
-                          <circle class="skill__circle skill__circle_under" cx="50" cy="50" r="40"></circle>
-                          <circle class="skill__circle skill__circle_above" cx="50" cy="50" r="40"></circle>
+                        <svg class="skill__figure" viewBox="0 0 110 110" preserveAspectRatio="none">
+                          <circle class="skill__circle skill__circle_under" cx="50%" cy="50%" r="45"></circle>
+                          <circle class="skill__circle skill__circle_above" cx="50%" cy="50%" r="45" transform="rotate(-90 55 55)"></circle>
                         </svg>
-                        <div class="skill__title">css3</div>
+                        <div class="skill__title">Gulp</div>
                       </figure>
                     </li>
                     <li class="skills-row__item">
                       <figure class="skill" data-percents="70">
-                        <svg class="skill__figure" viewBox="0 0 100 100" preserveAspectRatio="none">
-                          <circle class="skill__circle skill__circle_under" cx="50" cy="50" r="40"></circle>
-                          <circle class="skill__circle skill__circle_above" cx="50" cy="50" r="40"></circle>
+                        <svg class="skill__figure" viewBox="0 0 110 110" preserveAspectRatio="none">
+                          <circle class="skill__circle skill__circle_under" cx="50%" cy="50%" r="45"></circle>
+                          <circle class="skill__circle skill__circle_above" cx="50%" cy="50%" r="45" transform="rotate(-90 55 55)"></circle>
                         </svg>
-                        <div class="skill__title">javascript</div>
+                        <div class="skill__title">Bower</div>
                       </figure>
                     </li>
                   </ul>
@@ -177,14 +196,14 @@
           <div class="map__data">
             <div class="contacts">
               <h2 class="contacts__title">
-                <div class="block-subtitle">Контакты</div>
+                <div class="block-subtitle lr">Контакты</div>
               </h2>
               <address class="contacts__data">
                 <ul class="contacts__list">
                   <li class="contacts__item contacts-row">
                     <div class="contacts-row contacts__icon">
                       <svg class="contacts__icon-img">
-                        <use xlink:href="assets/images/icons/sprite.svg#../skype"></use>
+                        <use xlink:href="assets/images/icons/sprite.svg#skype"></use>
                       </svg>
                     </div>
                     <div class="contacts-row contacts__title">skype_kdn</div>
@@ -192,75 +211,72 @@
                   <li class="contacts__item contacts-row">
                     <div class="contacts-row contacts__icon">
                       <svg class="contacts__icon-img">
-                        <use xlink:href="assets/images/icons/sprite.svg#../skype"></use>
+                        <use xlink:href="assets/images/icons/sprite.svg#envelope"></use>
                       </svg>
                     </div>
-                    <div class="contacts-row contacts__title">skype_kdn</div>
+                    <div class="contacts-row contacts__title">blblbl@gmail.com</div>
                   </li>
                   <li class="contacts__item contacts-row">
                     <div class="contacts-row contacts__icon">
                       <svg class="contacts__icon-img">
-                        <use xlink:href="assets/images/icons/sprite.svg#../skype"></use>
+                        <use xlink:href="assets/images/icons/sprite.svg#phone"></use>
                       </svg>
                     </div>
-                    <div class="contacts-row contacts__title">skype_kdn</div>
+                    <div class="contacts-row contacts__title">+7 909 987 56 19</div>
                   </li>
                   <li class="contacts__item contacts-row">
                     <div class="contacts-row contacts__icon">
                       <svg class="contacts__icon-img">
-                        <use xlink:href="assets/images/icons/sprite.svg#../skype"></use>
+                        <use xlink:href="assets/images/icons/sprite.svg#map_marker"></use>
                       </svg>
                     </div>
-                    <div class="contacts-row contacts__title">skype_kdn</div>
+                    <div class="contacts-row contacts__title">Г. Москва ул. Пероваская 18</div>
                   </li>
                 </ul>
               </address>
             </div>
           </div>
         </section>
-        <footer class="footer">
-          <div class="footer__row">
-            <div class="footer__col">
-              <nav class="menu">
-                <ul class="menu__list">
-                  <li class="menu__item"><a class="menu__link" href="">Мои работы</a></li>
-                  <li class="menu__item"><a class="menu__link" href="">Обо мне</a></li>
-                  <li class="menu__item"><a class="menu__link" href="">Блог</a></li>
-                  <li class="menu__item"><a class="menu__link" href="">Авторизация</a></li>
-                </ul>
-              </nav>
-            </div>
-            <div class="footer__col footer__col_justify_end">
-              <ul class="socials socials_fill_green">
-                <li class="socials__item"><a class="socials__link" href="http://vk.com" target="_blank">
-                    <svg class="socials__link-icon">
-                      <use xlink:href="assets/images/icons/sprite.svg#vk"></use>
-                    </svg></a></li>
-                <li class="socials__item"><a class="socials__link" href="http://gh.com" target="_blank">
-                    <svg class="socials__link-icon">
-                      <use xlink:href="assets/images/icons/sprite.svg#github"></use>
-                    </svg></a></li>
-                <li class="socials__item"><a class="socials__link" href="http://in.com" target="_blank">
-                    <svg class="socials__link-icon">
-                      <use xlink:href="assets/images/icons/sprite.svg#in"></use>
-                    </svg></a></li>
+      </div>
+      <footer class="footer">
+        <div class="footer__row">
+          <div class="footer__col">
+            <nav class="menu footer__menu">
+              <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link" href="http://vk.com">Мои работы</a></li>
+                <li class="menu__item"><a class="menu__link" href="http://vk.com">Обо мне</a></li>
+                <li class="menu__item"><a class="menu__link" href="http://vk.com">Блог</a></li>
+                <li class="menu__item"><a class="menu__link" href="index.html">Авторизация</a></li>
               </ul>
-            </div>
+            </nav>
           </div>
-          <div class="footer__row">
-            <div class="footer__col">
-              <div class="footer__text">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam distinctio, explicabo quaerat vero ipsum corrupti facilis sit consequuntur, doloribus similique iste error, cupiditate ullam dignissimos minima. Ratione quod voluptates deserunt.</p>
-              </div>
-            </div>
-            <div class="footer__col footer__col_justify_end">
+          <div class="footer__col footer__col_justify_end">
+            <ul class="socials footer__socials">
+              <li class="socials__item"><a class="socials__link" href="http://vk.com" target="_blank">
+                  <svg class="socials__link-icon">
+                    <use xlink:href="assets/images/icons/sprite.svg#vk"></use>
+                  </svg></a></li>
+              <li class="socials__item"><a class="socials__link" href="http://gh.com" target="_blank">
+                  <svg class="socials__link-icon">
+                    <use xlink:href="assets/images/icons/sprite.svg#github"></use>
+                  </svg></a></li>
+              <li class="socials__item"><a class="socials__link" href="http://in.com" target="_blank">
+                  <svg class="socials__link-icon">
+                    <use xlink:href="assets/images/icons/sprite.svg#in"></use>
+                  </svg></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__row">
+          <div class="footer__col">
+            <div class="footer__text">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam distinctio, explicabo quaerat vero ipsum corrupti facilis sit consequuntur, doloribus similique iste error, cupiditate ullam dignissimos minima. Ratione quod voluptates deserunt.</p>
             </div>
           </div>
-        </footer>
-      </div>
-      <footer class="footer">
-        <h2>Copyright &copy;</h2>
+          <div class="footer__col footer__col_justify_end">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
       </footer>
     </div>
     <script src="bootloader.bundle.js"></script>

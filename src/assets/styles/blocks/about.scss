@@ -1,0 +1,182 @@
+.hero {
+    background: url(assets/images/bg/hero.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__socials {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
+
+.hero__down-btns {
+    position: absolute;
+    bottom: 2rem;
+    display: flex;
+    width: 36px;
+    height: 26px;
+}
+
+.about {
+    display: flex;
+    position: relative;
+}
+
+.about__left,
+.about__right {
+    width: 50%;
+}
+
+.about__left {
+    background: $izibeige;
+    display: flex;
+}
+
+.about__right {
+    background: $beige;
+}
+
+.about__left-title,
+.about__left-content {
+    width: 50%;
+    // display: flex;
+    // justify-content: center;
+}
+
+.about__left-title {
+    text-align: center;
+}
+
+.about__triangle {
+    position: absolute;
+    bottom: 100%;
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.triangle {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.triangle_fill_izibeige {
+    fill: $izibeige;
+}
+
+.triangle_fill_beige {
+    fill: $beige;
+}
+
+.skills-row__list {
+    display: flex;
+}
+
+.block-title {
+    font-size: 40px;
+    @include bernier();
+    text-transform: uppercase;
+    display: inline;
+    position: relative;
+
+
+}
+
+.block-subtitle {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.lr {
+    @include bernier();
+
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 50%;
+        display: inline-block;
+        width: 10px;
+        height: 4px;
+        background: #000;
+    }
+
+    &:before {
+        right: 105%;
+    }
+
+    &:after {
+        left: 105%;
+    }
+}
+
+.user-description__title {
+    display: flex;
+    justify-content: center;
+}
+
+.about__right-title {
+    display: flex;
+    justify-content: center;
+}
+
+.user-description__image {
+    display: flex;
+    justify-content: center;
+}
+
+.map {
+    background: url(assets/images/content/map.jpg) no-repeat;
+    background-size: cover;
+    height: 900px;
+}
+
+.map__data {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 35px 40px;
+    background: rgba(252, 252, 252, .85);
+    border-radius: 7px;
+}
+
+.contacts__item {
+    display: flex;
+}
+
+.contacts__icon-img {
+    width: 25px;
+    height: 25px
+}
+
+.contacts__icon-img {
+    fill: $green;
+    margin-right: 10px;
+}
+
+.contacts-row {
+    margin-bottom: 10px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.footer {
+    background: rgba(0, 0, 0, .5);
+}

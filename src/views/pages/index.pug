@@ -11,22 +11,21 @@ block content
                     .user__description
                         .user__name Ковылин Николай
                         .user__info Личный сайт веб разработчика
-                    .auth-block__socials
-                        - 
-                            var socials = [
-                                ['vk', 'http://vk.com'],
-                                ['github', 'http://gh.com'],
-                                ['in', 'http://in.com']
-                            ]
-                        +socials(socials, 'socials_fill_green')
-                nav.menu.auth-menu
-                    ul.menu__list
-                        li.menu__item
-                            a.menu__link(href='#') Мои работы
-                        li.menu__item
-                            a.menu__link(href='#') Обо мне
-                        li.menu__item
-                            a.menu__link(href='#') Блог
+                .auth-block__socials
+                    - 
+                        var socials = [
+                            ['vk', 'http://vk.com'],
+                            ['github', 'http://gh.com'],
+                            ['in', 'http://in.com']
+                        ]
+                    +socials(socials, 'socials_fill_green')
+                -
+                    var menues = [
+                        ['Мои работы', 'http://vk.com'],
+                        ['Обо мне', 'about.html'],
+                        ['Блог', 'http://vk.com']
+                    ]
+                +menues(menues, 'auth-menu')
 
             .copyright
                 .copyright__text © Ковылин Николай | создано с любовью в LoftSchool | 2018

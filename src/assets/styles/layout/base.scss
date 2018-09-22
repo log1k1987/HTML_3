@@ -25,6 +25,8 @@ body {
   overflow: hidden;
   min-height: 100%;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-container {
@@ -53,6 +55,7 @@ ul {
   }
 }
 
+figure,
 h1,
 h2,
 h3,
@@ -78,4 +81,8 @@ button[type="button"] {
     margin-bottom: 20px;
     font-size: 16px;
   }
+}
+
+.maincontent {
+  flex: 1;
 }

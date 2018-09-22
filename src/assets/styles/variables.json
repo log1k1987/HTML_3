@@ -1,6 +1,7 @@
 {
-  "white": "#efeee9",
+  "white": "#fff",
   "beige": "#eeebdf",
+  "izibeige": "#efeee9",
   "green": "#00bfa5",
   "green-hover": "#009688",
   "text-color": "#455a64",

@@ -1,0 +1,36 @@
+.skill {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.skill__figure {
+    fill: none;
+    stroke-width: 15;
+}
+
+.skill__title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.skill__circle_under {
+    stroke: #dfdcd5;
+}
+
+.skill__circle_above {
+    stroke: #1bb696;
+    stroke-dasharray: .0010 282.6;
+    transition: all 1s;
+}
+
+.skills-row__item {
+    width: 120px;
+    display: flex;
+}
+
+.skill__figure:hover .skill__circle_above {
+    stroke-dasharray: 282.6 282.6;
+}
