@@ -1,0 +1,75 @@
+extends ../main.layout.pug
+
+block variables
+    - var title = 'Мои работы';
+
+block scripts
+    script(src='about.bundle.js')
+
+block content
+    section.hero
+        .hero__socials
+            -
+                var socials = [
+                    ['vk', 'http://vk.com'],
+                    ['github', 'http://gh.com'],
+                    ['in', 'http://in.com']
+                ]
+            +socials(socials, 'socials_fill_white')
+
+        .hero__menu
+            a(href="#").hamburger-menu-btn
+                .hamburger-menu-lines
+
+        .hero__title
+            .section-title
+                img(src="", alt="").section-title__pic
+      
+            .user
+                .user__pic
+                     img.user__pic-img(src='assets/images/content/user.jpg')
+                .user__description
+                    .user__name Ковылин Николай
+                    .user__info Личный сайт веб разработчика
+
+        a(href="").down-btn.hero__down-btns
+            +icon('arrow_down', 'arrow-down')
+        .hero__content
+            .section-title.section-title--bg--portfolio
+            
+        a.btn-down.hero__btn(href="#works")
+            
+    main.works#works
+       
+        h2.visually-hidden Слайдер Мои Работы
+        .works__content
+            .works__title
+                h1.title-h1.title-h1--works= title
+            .slider-container
+                #slider-component
+        .trianglee
+            svg(viewbox="0 0 1000 160", preserveaspectratio="none").triangle.triangle_fill_izibeige
+                polygon(class="left", points="0,0   0,160   500.8,160   500.8,150")
+                polygon(class="right", points="1000,0   1000,160   500,160   500,150")
+    section.about-me
+        .about-me__content.container
+            .about-me-title
+                h2.title-h1.title-h1--about-me Что обо мне <br/> говорят
+            .reviews
+                ul.reviews__list
+                    li.reviews__item
+                        .reviews__photo(style="background-image: url('');")
+                        blockquote.reviews__description
+                            .reviews__text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+                            footer.reviews__author
+                                .reviews__author-name Ковальчук Дмитрий
+                                .reviews__author-post - основатель Loftschool
+                    li.reviews__item
+                        .reviews__photo(style="background-image: url('');")
+                        blockquote.reviews__description
+                            .reviews__text Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+                            footer.reviews__author
+                                .reviews__author-name Сабанцев Владимир
+                                .reviews__author-post - преподаватель
+        #feedback-wrapper
+        a.btn-up(href="#works")

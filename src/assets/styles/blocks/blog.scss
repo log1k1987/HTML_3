@@ -1,0 +1,31 @@
+.blog {
+    display: flex;
+    position: relative;
+}
+
+.blog__sidebar {
+    text-align: right;
+    padding: 20px;
+    flex: .3;
+}
+
+.blog__content {
+    flex: .6;
+    padding: 20px;
+}
+
+.trianglee {
+    position: absolute;
+    bottom: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+
+}
+
+
+.triangle {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
