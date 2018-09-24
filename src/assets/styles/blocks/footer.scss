@@ -1,10 +1,19 @@
+.footer__about {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
 .footer__row {
     display: flex;
+    border-bottom: 1px solid #63686c;
+    padding: 20px;
 }
 
 .footer__col {
     width: 50%;
     display: flex;
+    align-items: center;
 }
 
 .footer__menu .menu__list {

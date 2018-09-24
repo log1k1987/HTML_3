@@ -29,6 +29,10 @@
 .skills-row__item {
     width: 120px;
     display: flex;
+
+    @include laptop {
+        width: 100px;
+    }
 }
 
 .skill__figure:hover .skill__circle_above {

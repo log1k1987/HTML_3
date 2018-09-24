@@ -35,6 +35,12 @@
 .about__left {
     background: $izibeige;
     display: flex;
+
+    @include laptop {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .about__right {
@@ -124,6 +130,19 @@
 .about__right-title {
     display: flex;
     justify-content: center;
+    margin-bottom: 40px;
+}
+
+.about__right-description {
+    margin-bottom: 40px;
+}
+
+.skills-list__item {
+    margin-bottom: 20px;
+}
+
+.skills-row__title {
+    margin-bottom: 20px;
 }
 
 .user-description__image {

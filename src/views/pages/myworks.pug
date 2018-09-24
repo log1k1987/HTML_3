@@ -2,6 +2,7 @@ extends ../main.layout.pug
 
 block variables
     - var title = 'Мои работы';
+    - var anotherClass = 'footer';
 
 block scripts
     script(src='about.bundle.js')
@@ -34,10 +35,6 @@ block content
 
         a(href="").down-btn.hero__down-btns
             +icon('arrow_down', 'arrow-down')
-        .hero__content
-            .section-title.section-title--bg--portfolio
-            
-        a.btn-down.hero__btn(href="#works")
             
     main.works#works
        
@@ -71,5 +68,3 @@ block content
                             footer.reviews__author
                                 .reviews__author-name Сабанцев Владимир
                                 .reviews__author-post - преподаватель
-        #feedback-wrapper
-        a.btn-up(href="#works")
