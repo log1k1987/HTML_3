@@ -43,14 +43,24 @@
               <use xlink:href="assets/images/icons/sprite.svg#arrow_down"></use>
             </svg></a>
         </section>
-        <main class="works" id="works">
-          <h2 class="visually-hidden">Слайдер Мои Работы</h2>
-          <div class="works__content">
-            <div class="works__title">
-              <h1 class="title-h1 title-h1--works">Мои работы</h1>
-            </div>
-            <div class="slider-container">
-              <div id="slider-component"></div>
+        <section class="main">
+          <div class="slider js-slider">
+            <div class="slider__description js-description"></div>
+            <div class="slider__wrapper">
+              <div class="slider__img"><img class="slider__main-slide js-main-slide" src="assets/images/" alt="Текущий проект"/>
+              </div>
+              <div class="slider__wrapper-btn">
+                <button class="slider__btn slider__up-btn js-scroll-up">
+                  <svg class="arrow-down arrow-down--slider">
+                    <use xlink:href="assets/images/icons/sprite.svg#portf_arrow_down"></use>
+                  </svg><img class="slider__up-slide">
+                </button>
+                <button class="slider__btn slider__down-btn js-scroll-down">
+                  <svg class="arrow-down arrow-down--slider">
+                    <use xlink:href="assets/images/icons/sprite.svg#portf_arrow_up"></use>
+                  </svg><img class="slider__down-slide">
+                </button>
+              </div>
             </div>
           </div>
           <div class="trianglee">
@@ -59,7 +69,7 @@
               <polygon class="right" points="1000,0   1000,160   500,160   500,150"></polygon>
             </svg>
           </div>
-        </main>
+        </section>
         <section class="about-me">
           <div class="about-me__content container">
             <div class="about-me-title">
@@ -135,6 +145,6 @@
     </div>
     <script src="bootloader.bundle.js"></script>
     <script src="vendor.bundle.js"></script>
-    <script src="about.bundle.js"></script>
+    <script src="works.bundle.js"></script>
   </body>
 </html>

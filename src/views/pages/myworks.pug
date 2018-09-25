@@ -5,7 +5,7 @@ block variables
     - var anotherClass = 'footer';
 
 block scripts
-    script(src='about.bundle.js')
+    script(src='works.bundle.js')
 
 block content
     section.hero
@@ -36,14 +36,19 @@ block content
         a(href="").down-btn.hero__down-btns
             +icon('arrow_down', 'arrow-down')
             
-    main.works#works
-       
-        h2.visually-hidden Слайдер Мои Работы
-        .works__content
-            .works__title
-                h1.title-h1.title-h1--works= title
-            .slider-container
-                #slider-component
+    section.main
+        .slider.js-slider
+            .slider__description.js-description
+            .slider__wrapper
+                .slider__img
+                    +image('', 'Текущий проект', 'slider__main-slide js-main-slide')
+                .slider__wrapper-btn
+                    button.slider__btn.slider__up-btn.js-scroll-up
+                        +icon('portf_arrow_down', 'arrow-down arrow-down--slider')
+                        img.slider__up-slide
+                    button.slider__btn.slider__down-btn.js-scroll-down
+                        +icon('portf_arrow_up', 'arrow-down arrow-down--slider')
+                        img.slider__down-slide
         .trianglee
             svg(viewbox="0 0 1000 160", preserveaspectratio="none").triangle.triangle_fill_izibeige
                 polygon(class="left", points="0,0   0,160   500.8,160   500.8,150")
