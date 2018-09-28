@@ -3,6 +3,7 @@
     height: 100%;
     // background: url(assets/images/bg/hero.jpg) no-repeat;
     // background-size: cover;
+    will-change: transform;
 }
 
 .auth-block__content {
@@ -109,6 +110,16 @@
 
 .auth-menu .menu__item {
     display: flex;
+    flex: 1;
+
+    &:last-child .menu__link {
+        border-right: none;
+    }
+}
+
+
+.auth-menu .menu__link {
+    display: flex;
     background-color: $green;
     color: #fff;
     padding: 10px 30px;
@@ -122,9 +133,7 @@
         flex: 1;
     }
 
-    &:last-child {
-        border-right: none;
-    }
+
 
     &:hover {
         background-color: $green-hover;
@@ -134,6 +143,8 @@
         padding: 15px 20px;
     }
 }
+
+
 
 .auth-menu .menu__link {
     display: flex;
