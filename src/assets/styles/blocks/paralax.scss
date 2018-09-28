@@ -1,44 +1,70 @@
 .paralax {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    overflow: hidden;
 }
 
 .paralax__layer {
     position: absolute;
-    right: 0;
-    bottom: 0;
+    width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
 }
 
 .paralax__image {
     position: absolute;
-    bottom: -55%;
+    bottom: -30%;
     left: 50%;
-    transform: translate(-50%);
-}
-
-.paralax__image-cloud-10 {
-    position: absolute;
-    bottom: -10%;
-    left: 15%;
     transform: translateX(-50%);
-}
-
-.paralax__image-cloud-7 {
-    position: absolute;
-    top: 50%;
-    left: 55%;
-    transform: translate(-50%, -50%);
 }
 
 .paralax__image-cloud-4 {
-    position: absolute;
-    top: 20%;
+    width: 40%;
     left: 80%;
-    transform: translateX(-50%);
+    bottom: 50%;
+    animation: cloud-4 30s linear infinite;
+}
+
+.paralax__image-cloud-7 {
+    width: 25%;
+    bottom: 50%;
+    left: -15%;
+    animation: cloud-7 45s linear infinite;
+}
+
+.paralax__image-cloud-10 {
+    width: 70%;
+    bottom: -35%;
+    left: 30%;
+    animation: cloud-10 60s linear infinite;
+}
+
+@keyframes cloud-10 {
+    0% {
+        left: -35%;
+    }
+    100% {
+        left: 130%;
+    }
+}
+
+@keyframes cloud-7 {
+    0% {
+        left: -20%;
+    }
+    100% {
+        left: 125%;
+    }
+}
+
+@keyframes cloud-4 {
+    0% {
+        left: -45%;
+    }
+    100% {
+        left: 145%;
+    }
 }
