@@ -15,7 +15,7 @@
 }
 
 .slider__main-slide {
-    width: 70%;
+    max-width: 80%;
 }
 
 .slider__down-slide,
@@ -64,5 +64,13 @@
 }
 
 .slider__wrapper-btn {
-    height: 130px;
+    height: 225px;
+
+    @include tablets {
+        height: 215px;
+    }
+
+    @include phones {
+        height: 95px;
+    }
 }

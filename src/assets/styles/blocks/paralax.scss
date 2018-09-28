@@ -1,0 +1,44 @@
+.paralax {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.paralax__layer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+}
+
+.paralax__image {
+    position: absolute;
+    bottom: -55%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.paralax__image-cloud-10 {
+    position: absolute;
+    bottom: -10%;
+    left: 15%;
+    transform: translateX(-50%);
+}
+
+.paralax__image-cloud-7 {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+}
+
+.paralax__image-cloud-4 {
+    position: absolute;
+    top: 20%;
+    left: 80%;
+    transform: translateX(-50%);
+}
