@@ -19,24 +19,28 @@
     bottom: -30%;
     left: 50%;
     transform: translateX(-50%);
+    min-width: 110%;
 }
 
 .paralax__image-cloud-4 {
     left: 80%;
     bottom: 75%;
     animation: cloud-4 30s linear infinite;
+    min-width: initial;
 }
 
 .paralax__image-cloud-7 {
     bottom: 50%;
     left: -15%;
-    animation: cloud-7 45s linear infinite;
+    animation: cloud-7 35s linear infinite;
+    min-width: initial;
 }
 
 .paralax__image-cloud-10 {
-    bottom: -35%;
+    bottom: -5%;
     left: 30%;
     animation: cloud-10 60s linear infinite;
+    min-width: initial;
 }
 
 @keyframes cloud-10 {
