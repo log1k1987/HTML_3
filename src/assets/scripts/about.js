@@ -1,1 +1,3 @@
-import "./modules/example";
+import preloader from './modules/preloader';
+
+preloader();

@@ -3,7 +3,7 @@
     height: 100%;
     // background: url(assets/images/bg/hero.jpg) no-repeat;
     // background-size: cover;
-    will-change: transform;
+    // will-change: transform;
 }
 
 .auth-block__content {
@@ -154,36 +154,7 @@
     white-space: nowrap;
 }
 
-@keyframes updown {
-    0% {
-        transform: translateY(0);
-    }
 
-    15% {
-        transform: translatey(-60%);
-    }
-
-    30% {
-        transform: translateY(0);
-    }
-
-    45% {
-        transform: translateY(-20%);
-    }
-
-    60% {
-        transform: translateY(0);
-    }
-
-    75% {
-        transform: translateY(-5%);
-    }
-
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
 
 .btn {
     padding: 10px 30px;

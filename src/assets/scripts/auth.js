@@ -1,3 +1,5 @@
+import preloader from './modules/preloader';
+
 const parallaxContainer = document.getElementById('parallax');
 const layers = parallaxContainer.children;
 
@@ -15,3 +17,5 @@ const moveLayers = e => {
 };
 
 window.addEventListener('mousemove', moveLayers);
+
+preloader();

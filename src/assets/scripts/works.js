@@ -1,3 +1,7 @@
+import preloader from './modules/preloader';
+
+preloader();
+
 const slides = [
     {
         title: 'lending 1',

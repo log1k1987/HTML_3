@@ -1,3 +1,7 @@
+// @function xrem($xpx) {
+//     @return $xpx / 16px+0rem;
+// }
+
 @mixin desktop {
     @media screen and (max-width: $desktop) {
         @content;
