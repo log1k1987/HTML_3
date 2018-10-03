@@ -32,6 +32,10 @@ export default function preloader() {
         setTimeout(() => {
             stylePreloader.display = 'none';
             document.body.style.overflow = 'initial';
+
+            if (document.querySelector('.auth-block__user')) {
+                document.querySelector('.auth-block__user').style.animation = 'updown 0.7s .1s forwards';
+            }
         }, 2000);
     }
 }
