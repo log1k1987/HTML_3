@@ -1,0 +1,56 @@
+.btn-flip {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  background-color: transparent;
+  border: 1px solid $white;
+  border-radius: 5px;
+  padding: 12px 28px;
+  color: $white;
+  font-weight: 500;
+  outline: none;
+
+  &.is-hide {
+    display: none;
+  }
+
+  @include phones {
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  &:hover {
+    background-color: white;
+    color: $green;
+    border-color: transparent;
+  }
+}
+
+.button-scroll {
+  display: block;
+  background-color: transparent;
+  outline: none;
+}
+
+.btn-form {
+  color: white;
+  padding: 15px 0;
+  flex: 1;
+  border-right: 2px solid rgba(white, .5);
+  background-color: $green;
+  text-align: center;
+  font-weight: 500;
+  transition: .3s;
+  border: none;
+  border-right: 2px solid #74b8b6;
+  @include roboto();
+  cursor: pointer;
+
+  &:last-child {
+    border-right: none;
+  }
+
+  &:hover {
+    background-color: $green-hover;
+  }
+}

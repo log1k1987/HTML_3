@@ -28,45 +28,98 @@
       <div class="paralax__layer"><img class="paralax__image" src="assets/images/paralax/9.png"></div>
       <div class="paralax__layer"><img class="paralax__image paralax__image-cloud-10" src="assets/images/paralax/10-cloud.png"></div>
     </div>
-    <div class="auth-block">
-      <div class="auth-block__content"><a class="btn intro__btn-auth" href="#">Авторизоваться</a>
-        <div class="auth-block__user">
-          <div class="user user_color_grey">
-            <div class="user__pic"><img class="user__pic-img" src="assets/images/content/user.jpg"></div>
-            <div class="user__description">
-              <div class="user__name">Ковылин Николай</div>
-              <div class="user__info">Личный сайт веб разработчика</div>
+    <section class="wrapper">
+      <div class="auth-block">
+        <div class="auth-block__content">
+          <div class="auth-block__user">
+            <div class="intro__content">
+              <div class="user user_color_grey">
+                <div class="user__pic"><img class="user__pic-img" src="assets/images/content/user.jpg"></div>
+                <div class="user__description">
+                  <div class="user__name">Ковылин Николай</div>
+                  <div class="user__info">Личный сайт веб разработчика</div>
+                </div>
+              </div>
+              <div class="auth-block__socials">
+                <ul class="socials socials_fill_green">
+                  <li class="socials__item"><a class="socials__link" href="http://vk.com" target="_blank">
+                      <svg class="socials__link-icon">
+                        <use xlink:href="assets/images/icons/sprite.svg#vk"></use>
+                      </svg></a></li>
+                  <li class="socials__item"><a class="socials__link" href="http://gh.com" target="_blank">
+                      <svg class="socials__link-icon">
+                        <use xlink:href="assets/images/icons/sprite.svg#github"></use>
+                      </svg></a></li>
+                  <li class="socials__item"><a class="socials__link" href="http://in.com" target="_blank">
+                      <svg class="socials__link-icon">
+                        <use xlink:href="assets/images/icons/sprite.svg#in"></use>
+                      </svg></a></li>
+                </ul>
+              </div>
+              <nav class="menu auth-menu">
+                <ul class="menu__list">
+                  <li class="menu__item"><a class="menu__link" href="myworks.html">Мои работы</a></li>
+                  <li class="menu__item"><a class="menu__link" href="about.html">Обо мне</a></li>
+                  <li class="menu__item"><a class="menu__link" href="blog.html">Блог</a></li>
+                </ul>
+              </nav>
             </div>
           </div>
-          <div class="auth-block__socials">
-            <ul class="socials socials_fill_green">
-              <li class="socials__item"><a class="socials__link" href="http://vk.com" target="_blank">
-                  <svg class="socials__link-icon">
-                    <use xlink:href="assets/images/icons/sprite.svg#vk"></use>
-                  </svg></a></li>
-              <li class="socials__item"><a class="socials__link" href="http://gh.com" target="_blank">
-                  <svg class="socials__link-icon">
-                    <use xlink:href="assets/images/icons/sprite.svg#github"></use>
-                  </svg></a></li>
-              <li class="socials__item"><a class="socials__link" href="http://in.com" target="_blank">
-                  <svg class="socials__link-icon">
-                    <use xlink:href="assets/images/icons/sprite.svg#in"></use>
-                  </svg></a></li>
-            </ul>
+          <div class="auth-block__form">
+            <div class="intro__content">
+              <div class="subtitle lr subtitle--relative">
+                <h2 class="subtitle__text">Авторизуйтесь      </h2>
+                <div class="subtitle__subtext"> </div>
+              </div>
+              <form class="form-auth" id="formAuth" method="POST">
+                <div class="form-auth__content">
+                  <div class="form-auth__row">
+                    <input class="form-auth__input" type="text" name="name" placeholder="Логин" minLength="4" required>
+                    <div class="form-auth__icon-container">
+                      <svg class="form-auth__icon">
+                        <use xlink:href="assets/images/icons/sprite.svg#login"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="form-auth__row">
+                    <input class="form-auth__input" type="password" name="password" placeholder="Пароль" minLength="3" required>
+                    <div class="form-auth__icon-container">
+                      <svg class="form-auth__icon">
+                        <use xlink:href="assets/images/icons/sprite.svg#password"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="form-auth__row">
+                    <label class="form-auth__checkbox">
+                      <input class="form-auth__checkbox-input" type="checkbox" checked>
+                      <div class="form-auth__checkbox-fake"></div><span class="form-auth__block-title">Я человек</span>
+                    </label>
+                  </div>
+                  <div class="form-auth__row form-auth__row--text"><span class="form-auth__block-title form-auth__block-title--bold">Вы точно не робот?</span></div>
+                  <div class="form-auth__row">
+                    <label class="form-auth__radio">
+                      <input class="form-auth__radio-input" type="radio" name="check-auth" checked>
+                      <div class="form-auth__radio-fake"></div><span class="form-auth__block-title">Да</span>
+                    </label>
+                    <label class="form-auth__radio">
+                      <input class="form-auth__radio-input" type="radio" name="check-auth">
+                      <div class="form-auth__radio-fake"></div><span class="form-auth__block-title">Не уверен</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="form-auth__buttons">
+                  <button class="btn-form" id="flip-back">На главную</button>
+                  <button class="btn-form" type="submit">Войти</button>
+                </div>
+              </form>
+            </div>
           </div>
-          <nav class="menu auth-menu">
-            <ul class="menu__list">
-              <li class="menu__item"><a class="menu__link" href="myworks.html">Мои работы</a></li>
-              <li class="menu__item"><a class="menu__link" href="about.html">Обо мне</a></li>
-              <li class="menu__item"><a class="menu__link" href="blog.html">Блог</a></li>
-            </ul>
-          </nav>
         </div>
-        <div class="copyright">
-          <div class="copyright__text">© Ковылин Николай | создано с любовью в LoftSchool | 2018</div>
-        </div>
+      </div><a class="btn intro__btn-auth" href="#">Авторизоваться</a>
+      <div class="copyright">
+        <div class="copyright__text">© Ковылин Николай | создано с любовью в LoftSchool | 2018</div>
       </div>
-    </div>
+    </section>
     <script src="auth.bundle.js"></script>
   </body>
 </html>

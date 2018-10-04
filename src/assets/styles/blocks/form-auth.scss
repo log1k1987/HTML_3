@@ -1,0 +1,162 @@
+.form-auth {
+  width: 100%;
+
+  &__content {
+    padding: 0 20px;
+    margin-bottom: 30px;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 17px;
+    position: relative;
+    width: 100%;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &--text {
+      margin-bottom: 7px;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    outline: none;
+    padding: 12px 20px;
+    padding-left: 60px;
+    color: $grey;
+
+    &:focus:invalid {
+      border: 1px solid #e44845;
+
+      &~.form-auth__icon-container>.form-auth__icon {
+        fill: #e44845;
+      }
+    }
+
+    &:valid {
+      border: 1px solid $green;
+
+      &~.form-auth__icon-container>.form-auth__icon {
+        fill: $green;
+      }
+    }
+
+    &::placeholder {
+      color: $light-grey;
+    }
+  }
+}
+
+.form-auth__icon-container {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 40px;
+  height: calc(100% - 2px);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(240, 239, 233);
+}
+
+.form-auth__icon {
+  width: 16px;
+  height: 16px;
+  fill: $light-grey;
+}
+
+.form-auth__block-title {
+  display: block;
+  margin-left: 10px;
+  transition: .3s;
+
+  &--bold {
+    font-weight: 700;
+  }
+}
+
+.form-auth__radio,
+.form-auth__checkbox {
+  display: flex;
+  align-items: center;
+  margin-right: 33px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.form-auth__radio-input,
+.form-auth__checkbox-input {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.form-auth__radio-fake {
+  position: relative;
+  @include circle(20px);
+  border: 1px solid $beige;
+  background-color: white;
+
+  &::before {
+    content: '';
+    display: block;
+    @include circle(0);
+    background-color: $green;
+    @include centered;
+    transition: .3s;
+  }
+}
+
+.form-auth__radio-input:checked {
+
+  &+.form-auth__radio-fake::before {
+    @include size(8px, 8px)
+  }
+
+  &~.form-auth__block-title {
+    color: $green;
+    transition: .3s;
+  }
+}
+
+.form-auth__checkbox-fake {
+  @include size(20px, 20px);
+  border: 1px solid $beige;
+  border-radius: 4px;
+  background-color: white;
+  position: relative;
+  transition: .3s;
+}
+
+.form-auth__checkbox-input:checked {
+
+  &+.form-auth__checkbox-fake {
+    background-color: $green;
+  }
+
+  &+.form-auth__checkbox-fake::before {
+    content: '\2714';
+    @include centered;
+    color: #fff;
+  }
+}
+
+.form-auth__buttons {
+  width: 100%;
+  display: flex;
+}
+
+.subtitle--relative {
+  position: relative;
+}

@@ -1,0 +1,59 @@
+section.wrapper {
+  position: relative;
+}
+
+.auth-block {
+  position: absolute;
+  perspective: 1000px;
+
+  &.is-show {
+
+    .auth-block__content {
+      transform: rotateY(180deg);
+    }
+  }
+}
+
+
+.auth-block__content {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.auth-block__user,
+.auth-block__form {
+  width: 363px;
+  height: 378px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  backface-visibility: hidden;
+
+  @include phones {
+    width: 300px;
+    height: 368px;
+  }
+}
+
+.auth-block__user {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+.auth-block__form {
+  transform: rotateY(180deg);
+}
+
+.intro__content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, .85);
+  padding-top: 25px;
+  width: 100%;
+  overflow: hidden;
+}

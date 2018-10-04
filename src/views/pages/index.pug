@@ -22,31 +22,37 @@ block content
             img.paralax__image(src='assets/images/paralax/9.png')
         .paralax__layer
             img.paralax__image.paralax__image-cloud-10(src='assets/images/paralax/10-cloud.png')
-    .auth-block
-        .auth-block__content
-            a(href='#').btn.intro__btn-auth Авторизоваться
-            .auth-block__user
-                .user.user_color_grey
-                    .user__pic
-                        img.user__pic-img(src='assets/images/content/user.jpg')
-                    .user__description
-                        .user__name Ковылин Николай
-                        .user__info Личный сайт веб разработчика
-                .auth-block__socials
-                    -
-                        var socials = [
-                            ['vk', 'http://vk.com'],
-                            ['github', 'http://gh.com'],
-                            ['in', 'http://in.com']
-                        ]
-                    +socials(socials, 'socials_fill_green')
-                -
-                    var menues = [
-                        ['Мои работы', 'myworks.html'],
-                        ['Обо мне', 'about.html'],
-                        ['Блог', 'blog.html']
-                    ]
-                +menues(menues, 'auth-menu')
-
-            .copyright
-                .copyright__text © Ковылин Николай | создано с любовью в LoftSchool | 2018
+    section.wrapper
+        .auth-block
+            .auth-block__content
+                .auth-block__user
+                    .intro__content
+                        .user.user_color_grey
+                            .user__pic
+                                img.user__pic-img(src='assets/images/content/user.jpg')
+                            .user__description
+                                .user__name Ковылин Николай
+                                .user__info Личный сайт веб разработчика
+                        .auth-block__socials
+                            -
+                                var socials = [
+                                    ['vk', 'http://vk.com'],
+                                    ['github', 'http://gh.com'],
+                                    ['in', 'http://in.com']
+                                ]
+                            +socials(socials, 'socials_fill_green')
+                        -
+                            var menues = [
+                                ['Мои работы', 'myworks.html'],
+                                ['Обо мне', 'about.html'],
+                                ['Блог', 'blog.html']
+                            ]
+                        +menues(menues, 'auth-menu')
+                .auth-block__form
+                        .intro__content
+                            +subtitle('relative', 'Авторизуйтесь')
+                            include ../common/form-auth.pug
+        
+        a(href='#').btn.intro__btn-auth Авторизоваться
+        .copyright
+            .copyright__text © Ковылин Николай | создано с любовью в LoftSchool | 2018
